@@ -1,8 +1,7 @@
 from machine import Machine
 from settings import *
-import ctypes, pygame, sys
+import pygame, sys
 
-ctypes.windll.user32.SetProcessDPIAware()
 
 class Game:
     def __init__(self):
