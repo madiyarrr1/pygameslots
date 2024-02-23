@@ -105,13 +105,6 @@ class Machine:
         curr_player.last_payout = total_win
         curr_player.total_won += total_win
 
-    def play_win_sound(self, win_data):
-        sum = 0
-        for item in win_data.values():
-            sum += len(item[1])
-        if sum == 3:
-            self.win_three.play()
-
     def win_animation(self):
         if self.win_animation_ongoing and self.win_data:
             for k, v in list(self.win_data.items()):
